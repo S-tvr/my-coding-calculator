@@ -17,10 +17,13 @@ public class Main {
     public static int div(int a, int b) throws ArithmeticException {
         try {
             return a / b;
-        } catch (ArithmeticException e) {
+        } catch (ArithmeticException ex) {
             System.err.println("Error. Denominator must not be zero");
-            throw e;
+            throw ex;
         }
     }
 
+    public static int mod(int a, int b) {
+        return a % b;
+    }
 }
